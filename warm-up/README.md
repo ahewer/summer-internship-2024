@@ -43,7 +43,7 @@ Write a simple URL encoder that
 1. Trims trailing whitespace
 2. Replaces whitespace with %20
 
-File: [src/main/kotlin/exercise/UrlEncoder.kt](./src/main/kotlin/exercise/UrlEncoderTests.kt)
+File: [src/main/kotlin/exercise/UrlEncoder.kt](./src/main/kotlin/exercise/UrlEncoder.kt)
 
 Tests: [src/test/kotlin/exercise/UrlEncoderTest.kt](./src/test/kotlin/exercise/UrlEncoderTest.kt)
 
@@ -63,7 +63,7 @@ Tests: [src/test/kotlin/exercise/PalindromePermutationCheckerTest.kt](./src/test
 
 ### 5. Matrix rotation
 
-Write a method for rotating a given $n \times n$ by 90 degrees clock-wise.
+Write a method for rotating a given $n \times n$ matrix by 90 degrees clock-wise.
 
 File: [src/main/kotlin/exercise/MatrixRotation.kt](./src/main/kotlin/exercise/MatrixRotation.kt)
 

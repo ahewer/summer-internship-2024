@@ -20,7 +20,7 @@ class PalindromePermutationCheckerTest{
     }
 
     @Test fun `Should return true for permuted palindrome`() {
-        val string = "No lemons, melon no"
+        val string = "melon no, No lemons"
         val result = checker.checkPermutation(string)
         assertTrue(result)
     }
