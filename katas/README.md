@@ -7,7 +7,7 @@ We now turn to Katas: small projects meant for regular deliberate practice.
 
 **Goals**: 
 
-- Get experience solving Katas
+- Get experience in solving Katas
 - Apply object-orientation where needed
 - Pick a Kata that you want to do every day
 - Observe how your solution changes after a few days
@@ -29,8 +29,8 @@ Example:
 
 Your scanner should output 123456789 for this example.
 
-The original Kata proceeds to add more functionality to scanner.
-We focus first on the basic form of the Kata.
+The original Kata proceeds to add more functionality to the scanner.
+We focus on the basic form of the Kata.
 Feel free to look up the original Kata.
 
 File: [src/main/kotlin/kata/bankocr/BankOcrReader.kt](src/main/kotlin/kata/bankocr/BankOcrReader.kt)
