@@ -1,0 +1,54 @@
+openapi: 3.0.0
+info:
+  description: >-
+    This is an example API specification.
+  version: 1.0.0
+  title: API First Service API
+tags:
+  - name: example
+    description: Everything related to working with the example.
+  - name: health
+    description: Everything related to health checks, ping operations, ...
+
+paths:
+  /example:
+    get:
+      tags:
+        - example
+      summary: Returns a message.
+      description: Use this operation receive an example message.
+      operationId: example
+      responses:
+        '200':
+          description: Operation succeeded, message is returned.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExampleResponseModel'
+  /health:
+    get:
+      tags:
+        - health
+      summary: This is a single health check endpoint
+      description: This endpoint will become active as soon as the application started.
+      operationId: health
+      responses:
+        '200':
+          description: operation succeeded, the service API is operational
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ok
+
+components:
+  schemas:
+    ExampleResponseModel:
+      title: Example Response Model
+      required:
+        - message
+      type: object
+      properties:
+        message:
+          type: string
+          example: hi
