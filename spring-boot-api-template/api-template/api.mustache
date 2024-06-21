@@ -66,6 +66,7 @@ import kotlin.collections.Map
 @RequestMapping("\${api.base-path:<%contextPath%>}")
 <%={{ }}=%>
 {{#operations}}
+@CrossOrigin(origins = ["*"])
 class {{classname}}Controller({{#serviceInterface}}@Autowired(required = true) val service: {{classname}}Service{{/serviceInterface}}) {
 {{#operation}}
 
