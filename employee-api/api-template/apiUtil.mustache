@@ -1,0 +1,23 @@
+package {{apiPackage}}
+
+{{^reactive}}
+import org.springframework.web.context.request.NativeWebRequest
+
+import {{javaxPackage}}.servlet.http.HttpServletResponse
+import java.io.IOException
+{{/reactive}}
+
+object ApiUtil {
+{{^reactive}}
+    fun setExampleResponse(req: NativeWebRequest, contentType: String, employee: String) {
+        try {
+            val res = req.getNativeResponse(HttpServletResponse::class.java)
+            res?.characterEncoding = "UTF-8"
+            res?.addHeader("Content-Type", contentType)
+            res?.writer?.print(employee)
+        } catch (e: IOException) {
+            throw RuntimeException(e)
+        }
+    }
+{{/reactive}}
+}
